@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="数学方法," />
 
 
 
@@ -79,14 +79,15 @@
 
 
 
-<meta name="description" content="记录我的学习和生活">
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;categories&#x2F;index.html">
+<meta name="description" content="题目描述统计所有小于非负整数 n 的质数的数量。 示例: 123输入: 10输出: 4解释: 小于 10 的质数一共有 4 个, 它们是 2, 3, 5, 7 。  题目地址：https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;count-primes">
+<meta name="keywords" content="数学方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【LeetCode】204. 计数质数 [Easy]">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;25&#x2F;%E3%80%90LeetCode%E3%80%91204.%20%E8%AE%A1%E6%95%B0%E8%B4%A8%E6%95%B0%20%5BEasy%5D&#x2F;index.html">
 <meta property="og:site_name" content="Kylin&#39;s Blog">
-<meta property="og:description" content="记录我的学习和生活">
+<meta property="og:description" content="题目描述统计所有小于非负整数 n 的质数的数量。 示例: 123输入: 10输出: 4解释: 小于 10 的质数一共有 4 个, 它们是 2, 3, 5, 7 。  题目地址：https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;count-primes">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-24T07:04:20.303Z">
+<meta property="og:updated_time" content="2019-10-25T09:06:27.690Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -117,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/10/25/【LeetCode】204. 计数质数 [Easy]/"/>
 
 
 
 
 
-  <title>categories | Kylin's Blog</title>
+  <title>【LeetCode】204. 计数质数 [Easy] | Kylin's Blog</title>
   
 
 
@@ -272,40 +273,181 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/25/%E3%80%90LeetCode%E3%80%91204.%20%E8%AE%A1%E6%95%B0%E8%B4%A8%E6%95%B0%20%5BEasy%5D/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kylin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kylin's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">categories</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 1 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/LeetCode/">LeetCode</a><span class="category-list-count">4</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">【LeetCode】204. 计数质数 [Easy]</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-25T17:06:20+08:00">
+                2019-10-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/LeetCode/" itemprop="url" rel="index">
+                    <span itemprop="name">LeetCode</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>统计所有小于非负整数 <em>n</em> 的质数的数量。</p>
+<p><strong>示例:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: 10</span><br><span class="line">输出: 4</span><br><span class="line">解释: 小于 10 的质数一共有 4 个, 它们是 2, 3, 5, 7 。</span><br></pre></td></tr></table></figure>
+
+<p>题目地址：<a href="https://leetcode-cn.com/problems/count-primes" target="_blank" rel="noopener">https://leetcode-cn.com/problems/count-primes</a></p>
+ <a id="more"></a> 
+
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>此题有两种解法：传统方法和厄拉多塞筛法。</p>
+<p>传统方法：两层遍历，外层从1到n遍历，判断元素 i 是否为质数，内层从2到 sqrt(i) 遍历，判断该数是否满足质数条件。时间复杂度为O(n^2)。</p>
+<p>厄拉多塞筛法：主要思想就是，把质数的倍数都排除掉，剩下的就都是质数了。首先定义一个长度为n的布尔数组 isprime，并全部初始化为 true，即假定所有元素为质数。由于2是最小的质数，我们从2开始遍历，排除2的倍数，即将2的倍数设为 false。接下来我们判断3是否为质数，由于 isprime[3]=true，因此3为质数，我们再将3的倍数都设为false，一直进行下去，直到 n-1。然后我们再次从2开始遍历，统计质数的个数，得到最后结果。这里有一个trick，我们在筛掉质数的倍数时，可能会存在重复（乘法的交换律导致的，如 2*3=3*2=6），因此如果 i 为质数，我们可以从 i*i 开始筛，从而减少重复。</p>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">countPrimes</span><span class="params">(self, n: int)</span> -&gt; int:</span></span><br><span class="line">        <span class="keyword">if</span> n &lt; <span class="number">2</span>:</span><br><span class="line">             <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        res = [<span class="number">1</span>] * n</span><br><span class="line">        res[<span class="number">0</span>], res[<span class="number">1</span>] = <span class="number">0</span>, <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>, int(n ** <span class="number">0.5</span>) + <span class="number">1</span>):</span><br><span class="line">            <span class="keyword">if</span> res[i]:</span><br><span class="line">                res[i * i : n : i] = [<span class="number">0</span>] * len(res[i * i : n : i])</span><br><span class="line">        <span class="keyword">return</span> sum(res)</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">countPrimes</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">bool</span>&gt; isprime(n, <span class="literal">true</span>);</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>; i &lt; <span class="built_in">sqrt</span>(n); ++i)&#123;</span><br><span class="line">            <span class="keyword">if</span>(isprime[i])&#123;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> num = i * i; num &lt; n; num += i)&#123;</span><br><span class="line">                    isprime[num] = <span class="literal">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>; i &lt; n; ++i)&#123;</span><br><span class="line">            <span class="keyword">if</span>(isprime[i] == <span class="literal">true</span>)</span><br><span class="line">                ++res;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E6%95%B0%E5%AD%A6%E6%96%B9%E6%B3%95/" rel="tag"># 数学方法</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/10/25/%E3%80%90LeetCode%E3%80%91136.%20%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97%20%5BEasy%5D/" rel="next" title="【LeetCode】136. 只出现一次的数字 [Easy]">
+                <i class="fa fa-chevron-left"></i> 【LeetCode】136. 只出现一次的数字 [Easy]
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -314,6 +456,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -334,8 +480,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -399,6 +554,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解题思路"><span class="nav-number">2.</span> <span class="nav-text">解题思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现"><span class="nav-number">3.</span> <span class="nav-text">代码实现</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Python"><span class="nav-number">3.1.</span> <span class="nav-text">Python</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#C"><span class="nav-number">3.2.</span> <span class="nav-text">C++</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
